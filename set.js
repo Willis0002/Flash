@@ -11,18 +11,18 @@ const databasePath = path.join(__dirname, './database.db');
 const DATABASE_URL = process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL;
 
 module.exports = {
-    session: process.env.SESSION_ID || 'FLASH-MD-WA-BOT;;;=>',
+    session: process.env.SESSION_ID || '.',
     PREFIXES: (process.env.PREFIX || '').split(',').map(prefix => prefix.trim()).filter(Boolean),
-    OWNER_NAME: process.env.OWNER_NAME || "France King",
-    OWNER_NUMBER: process.env.OWNER_NUMBER || "254105915061",
+    OWNER_NAME: process.env.OWNER_NAME || "Willis",
+    OWNER_NUMBER: process.env.OWNER_NUMBER || "254702365210,254786273945",
     AUTO_READ_STATUS: process.env.AUTO_VIEW_STATUS || "on",
-    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "on",
+    AUTOREAD_MESSAGES: process.env.AUTO_READ_MESSAGES || "off",
     CHATBOT: process.env.CHAT_BOT || "off",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_SAVE_STATUS || 'off',
-    A_REACT: process.env.AUTO_REACTION || 'on',
-    L_S: process.env.STATUS_LIKE || 'on',
+    A_REACT: process.env.AUTO_REACTION || 'off',
+    L_S: process.env.STATUS_LIKE || 'off',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'off',
-    URL: process.env.MENU_LINKS || 'https://files.catbox.moe/c2jdkw.jpg',
+    URL: process.env.MENU_LINKS || 'https://telegra.ph/file/d7b133573a5a3622775e6.jpg',
     MODE: process.env.BOT_MODE || "private",
     PM_PERMIT: process.env.PM_PERMIT || 'on',
     HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
@@ -32,7 +32,7 @@ module.exports = {
     ADM: process.env.ANTI_DELETE || 'on',
     TZ: process.env.TIME_ZONE || 'Africa/Nairobi',
     DP: process.env.STARTING_MESSAGE || "on",
-    ANTICALL: process.env.ANTICALL || 'on',
+    ANTICALL: process.env.ANTICALL || 'off',
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://flashmd_user:JlUe2Vs0UuBGh0sXz7rxONTeXSOra9XP@dpg-cqbd04tumphs73d2706g-a/flashmd"
