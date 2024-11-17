@@ -20,7 +20,7 @@ module.exports = {
     CHATBOT: process.env.CHAT_BOT || "off",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_SAVE_STATUS || 'off',
     A_REACT: process.env.AUTO_REACTION || 'off',
-    L_S: process.env.STATUS_LIKE || 'off',
+    L_S: process.env.STATUS_LIKE || 'on',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'off',
     URL: process.env.MENU_LINKS || 'https://telegra.ph/file/d7b133573a5a3622775e6.jpg',
     MODE: process.env.BOT_MODE || "private",
